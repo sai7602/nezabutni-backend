@@ -1,7 +1,7 @@
-import { db } from '@vercel/postgres';
+// import { db } from '@vercel/postgres';
 import { NextApiRequest, NextApiResponse } from 'next';
-import { faker } from '@faker-js/faker/locale/uk';
-import { title } from 'process';
+// import { faker } from '@faker-js/faker/locale/uk';
+// import { title } from 'process';
 
 interface DementiaMenu {
 	menuTitle: string;
