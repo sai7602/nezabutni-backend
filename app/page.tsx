@@ -1285,7 +1285,7 @@ const data = [
 // 	],
 // };
 
-const setDatabase = async (record) => {
+const setDatabase = async (record: any) => {
 	fetch('/api/put-data', {
 		method: 'POST',
 		headers: {
