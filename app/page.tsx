@@ -1340,7 +1340,7 @@ export default function Page() {
 			<div>
 				<button
 					onClick={(e) => {
-						data.map((record) => setDatabase(record));
+						data.map((record: any) => setDatabase(record));
 						// setDatabase(data[0]);
 						console.log('e.b.c');
 					}}>
