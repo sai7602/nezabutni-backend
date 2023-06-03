@@ -5,7 +5,7 @@ export default async function handler(
 	request: NextApiRequest,
 	response: NextApiResponse
 ) {
-	console.log(request);
+	// console.log(request);
 	try {
 		// Розпакування даних з запиту
 		const {
@@ -31,16 +31,16 @@ export default async function handler(
 				contentLight,
 				contentDark,
 				menuSubTitle: {
-					create: menuSubTitle.map((subMenu) => ({
+					create: menuSubTitle.map((subMenu: any) => ({
 						SubMenuTitle: subMenu.SubMenuTitle,
 						SubMenuLinkUrl: subMenu.SubMenuLinkUrl,
 						SubMenuCards: {
-							create: subMenu.SubMenuCards.map((card) => ({
+							create: subMenu.SubMenuCards.map((card: any) => ({
 								cardTitle: card.cardTitle,
 								cardLinkUrl: card.cardLinkUrl,
 								cardImg: card.cardImg,
 								cardText: {
-									create: card.cardText.map((text) => ({
+									create: card.cardText.map((text: any) => ({
 										cardTextTitle: text.cardTextTitle,
 										cardTextDescription:
 											text.cardTextDescription,
