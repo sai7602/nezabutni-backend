@@ -232,7 +232,7 @@ const data = [
 	Багато причин проблем з пам’яттю можна усунути за допомогою правильної підтримки та лікування. Водночас за допомогою профілактики можна попередити чи відтермінувати погіршення пам’яті. На цій сторінці пояснюються причини погіршення пам’яті, як подбати про свою пам’ять та як впоратись із її погіршенням у себе чи іншої людини.`,
 		menuSubTitle: [
 			{
-				SubMenuTitle: 'Основне про деменцію',
+				SubMenuTitle: 'Поширені типи деменції',
 				SubMenuLinkUrl: 'https://example.com/submenu1',
 				SubMenuCards: [
 					{
@@ -357,7 +357,81 @@ const data = [
 				],
 			},
 			{
-				SubMenuTitle: 'Стадії деменції',
+				SubMenuTitle: 'Що таке рання деменція?',
+				SubMenuLinkUrl: 'https://example.com/submenu2',
+				SubMenuCards: [
+					{
+						cardTitle: 'Процес прогресування синдрому',
+						cardLinkUrl: 'https://example.com/card1',
+						cardImg: 'card1.jpg',
+						cardText: [
+							{
+								cardTextTitle: 'Text 1',
+								cardTextDescription: 'Description 1',
+							},
+							{
+								cardTextTitle: 'Text 2',
+								cardTextDescription: 'Description 2',
+							},
+						],
+						cardIntroduction: 'Introduction 1',
+						cardIntroductionTitle: 'Introduction Title 1',
+					},
+					{
+						cardTitle: 'Рання стадія деменції',
+						cardLinkUrl: 'https://example.com/card1',
+						cardImg: 'card1.jpg',
+						cardText: [
+							{
+								cardTextTitle: 'Text 1',
+								cardTextDescription: 'Description 1',
+							},
+							{
+								cardTextTitle: 'Text 2',
+								cardTextDescription: 'Description 2',
+							},
+						],
+						cardIntroduction: 'Introduction 1',
+						cardIntroductionTitle: 'Introduction Title 1',
+					},
+					{
+						cardTitle: 'Середня стадія',
+						cardLinkUrl: 'https://example.com/card1',
+						cardImg: 'card1.jpg',
+						cardText: [
+							{
+								cardTextTitle: 'Text 1',
+								cardTextDescription: 'Description 1',
+							},
+							{
+								cardTextTitle: 'Text 2',
+								cardTextDescription: 'Description 2',
+							},
+						],
+						cardIntroduction: 'Introduction 1',
+						cardIntroductionTitle: 'Introduction Title 1',
+					},
+					{
+						cardTitle: 'Пізня стадія',
+						cardLinkUrl: 'https://example.com/card1',
+						cardImg: 'card1.jpg',
+						cardText: [
+							{
+								cardTextTitle: 'Text 1',
+								cardTextDescription: 'Description 1',
+							},
+							{
+								cardTextTitle: 'Text 2',
+								cardTextDescription: 'Description 2',
+							},
+						],
+						cardIntroduction: 'Introduction 1',
+						cardIntroductionTitle: 'Introduction Title 1',
+					},
+				],
+			},
+			{
+				SubMenuTitle: `Пов'язані стани`,
 				SubMenuLinkUrl: 'https://example.com/submenu2',
 				SubMenuCards: [
 					{
@@ -445,7 +519,7 @@ const data = [
 	Багато причин проблем з пам’яттю можна усунути за допомогою правильної підтримки та лікування. Водночас за допомогою профілактики можна попередити чи відтермінувати погіршення пам’яті. На цій сторінці пояснюються причини погіршення пам’яті, як подбати про свою пам’ять та як впоратись із її погіршенням у себе чи іншої людини.`,
 		menuSubTitle: [
 			{
-				SubMenuTitle: 'Основне про деменцію',
+				SubMenuTitle: 'Діагностика деменції',
 				SubMenuLinkUrl: 'https://example.com/submenu1',
 				SubMenuCards: [
 					{
@@ -570,7 +644,155 @@ const data = [
 				],
 			},
 			{
-				SubMenuTitle: 'Стадії деменції',
+				SubMenuTitle: 'Лікування та медична терапія',
+				SubMenuLinkUrl: 'https://example.com/submenu2',
+				SubMenuCards: [
+					{
+						cardTitle: 'Процес прогресування синдрому',
+						cardLinkUrl: 'https://example.com/card1',
+						cardImg: 'card1.jpg',
+						cardText: [
+							{
+								cardTextTitle: 'Text 1',
+								cardTextDescription: 'Description 1',
+							},
+							{
+								cardTextTitle: 'Text 2',
+								cardTextDescription: 'Description 2',
+							},
+						],
+						cardIntroduction: 'Introduction 1',
+						cardIntroductionTitle: 'Introduction Title 1',
+					},
+					{
+						cardTitle: 'Рання стадія деменції',
+						cardLinkUrl: 'https://example.com/card1',
+						cardImg: 'card1.jpg',
+						cardText: [
+							{
+								cardTextTitle: 'Text 1',
+								cardTextDescription: 'Description 1',
+							},
+							{
+								cardTextTitle: 'Text 2',
+								cardTextDescription: 'Description 2',
+							},
+						],
+						cardIntroduction: 'Introduction 1',
+						cardIntroductionTitle: 'Introduction Title 1',
+					},
+					{
+						cardTitle: 'Середня стадія',
+						cardLinkUrl: 'https://example.com/card1',
+						cardImg: 'card1.jpg',
+						cardText: [
+							{
+								cardTextTitle: 'Text 1',
+								cardTextDescription: 'Description 1',
+							},
+							{
+								cardTextTitle: 'Text 2',
+								cardTextDescription: 'Description 2',
+							},
+						],
+						cardIntroduction: 'Introduction 1',
+						cardIntroductionTitle: 'Introduction Title 1',
+					},
+					{
+						cardTitle: 'Пізня стадія',
+						cardLinkUrl: 'https://example.com/card1',
+						cardImg: 'card1.jpg',
+						cardText: [
+							{
+								cardTextTitle: 'Text 1',
+								cardTextDescription: 'Description 1',
+							},
+							{
+								cardTextTitle: 'Text 2',
+								cardTextDescription: 'Description 2',
+							},
+						],
+						cardIntroduction: 'Introduction 1',
+						cardIntroductionTitle: 'Introduction Title 1',
+					},
+				],
+			},
+			{
+				SubMenuTitle: 'Нефармакологічна терапія',
+				SubMenuLinkUrl: 'https://example.com/submenu2',
+				SubMenuCards: [
+					{
+						cardTitle: 'Процес прогресування синдрому',
+						cardLinkUrl: 'https://example.com/card1',
+						cardImg: 'card1.jpg',
+						cardText: [
+							{
+								cardTextTitle: 'Text 1',
+								cardTextDescription: 'Description 1',
+							},
+							{
+								cardTextTitle: 'Text 2',
+								cardTextDescription: 'Description 2',
+							},
+						],
+						cardIntroduction: 'Introduction 1',
+						cardIntroductionTitle: 'Introduction Title 1',
+					},
+					{
+						cardTitle: 'Рання стадія деменції',
+						cardLinkUrl: 'https://example.com/card1',
+						cardImg: 'card1.jpg',
+						cardText: [
+							{
+								cardTextTitle: 'Text 1',
+								cardTextDescription: 'Description 1',
+							},
+							{
+								cardTextTitle: 'Text 2',
+								cardTextDescription: 'Description 2',
+							},
+						],
+						cardIntroduction: 'Introduction 1',
+						cardIntroductionTitle: 'Introduction Title 1',
+					},
+					{
+						cardTitle: 'Середня стадія',
+						cardLinkUrl: 'https://example.com/card1',
+						cardImg: 'card1.jpg',
+						cardText: [
+							{
+								cardTextTitle: 'Text 1',
+								cardTextDescription: 'Description 1',
+							},
+							{
+								cardTextTitle: 'Text 2',
+								cardTextDescription: 'Description 2',
+							},
+						],
+						cardIntroduction: 'Introduction 1',
+						cardIntroductionTitle: 'Introduction Title 1',
+					},
+					{
+						cardTitle: 'Пізня стадія',
+						cardLinkUrl: 'https://example.com/card1',
+						cardImg: 'card1.jpg',
+						cardText: [
+							{
+								cardTextTitle: 'Text 1',
+								cardTextDescription: 'Description 1',
+							},
+							{
+								cardTextTitle: 'Text 2',
+								cardTextDescription: 'Description 2',
+							},
+						],
+						cardIntroduction: 'Introduction 1',
+						cardIntroductionTitle: 'Introduction Title 1',
+					},
+				],
+			},
+			{
+				SubMenuTitle: 'Альтернативні практики',
 				SubMenuLinkUrl: 'https://example.com/submenu2',
 				SubMenuCards: [
 					{
@@ -658,7 +880,7 @@ const data = [
 	Багато причин проблем з пам’яттю можна усунути за допомогою правильної підтримки та лікування. Водночас за допомогою профілактики можна попередити чи відтермінувати погіршення пам’яті. На цій сторінці пояснюються причини погіршення пам’яті, як подбати про свою пам’ять та як впоратись із її погіршенням у себе чи іншої людини.`,
 		menuSubTitle: [
 			{
-				SubMenuTitle: 'Основне про деменцію',
+				SubMenuTitle: 'Фактори ризику деменції',
 				SubMenuLinkUrl: 'https://example.com/submenu1',
 				SubMenuCards: [
 					{
@@ -783,7 +1005,7 @@ const data = [
 				],
 			},
 			{
-				SubMenuTitle: 'Стадії деменції',
+				SubMenuTitle: 'Профілактика деменції',
 				SubMenuLinkUrl: 'https://example.com/submenu2',
 				SubMenuCards: [
 					{
@@ -869,207 +1091,7 @@ const data = [
 		contentDark: `Погіршення пам’яті не обов’язково означає, що у вас деменція. Деякі люди можуть запам'ятовувати речі краще за інших.
 
 	Багато причин проблем з пам’яттю можна усунути за допомогою правильної підтримки та лікування. Водночас за допомогою профілактики можна попередити чи відтермінувати погіршення пам’яті. На цій сторінці пояснюються причини погіршення пам’яті, як подбати про свою пам’ять та як впоратись із її погіршенням у себе чи іншої людини.`,
-		menuSubTitle: [
-			{
-				SubMenuTitle: 'Основне про деменцію',
-				SubMenuLinkUrl: 'https://example.com/submenu1',
-				SubMenuCards: [
-					{
-						cardTitle: '5 речей, які треба знати про деменцію',
-						cardLinkUrl: 'https://example.com/card2',
-						cardImg: 'card2.jpg',
-						cardText: [
-							{
-								cardTextTitle: 'Text 3',
-								cardTextDescription: 'Description 3',
-							},
-							{
-								cardTextTitle: 'Text 4',
-								cardTextDescription: 'Description 4',
-							},
-						],
-						cardIntroduction: 'Introduction 2',
-						cardIntroductionTitle: 'Introduction Title 2',
-					},
-					{
-						cardTitle: '10 ранніх ознак деменції',
-						cardLinkUrl: 'https://example.com/card2',
-						cardImg: 'card2.jpg',
-						cardText: [
-							{
-								cardTextTitle: 'Text 3',
-								cardTextDescription: 'Description 3',
-							},
-							{
-								cardTextTitle: 'Text 4',
-								cardTextDescription: 'Description 4',
-							},
-						],
-						cardIntroduction: 'Introduction 2',
-						cardIntroductionTitle: 'Introduction Title 2',
-					},
-					{
-						cardTitle: 'Статистика та основні цифри',
-						cardLinkUrl: 'https://example.com/card2',
-						cardImg: 'card2.jpg',
-						cardText: [
-							{
-								cardTextTitle: 'Text 3',
-								cardTextDescription: 'Description 3',
-							},
-							{
-								cardTextTitle: 'Text 4',
-								cardTextDescription: 'Description 4',
-							},
-						],
-						cardIntroduction: 'Introduction 2',
-						cardIntroductionTitle: 'Introduction Title 2',
-					},
-					{
-						cardTitle: 'У кого може розвинутися деменція',
-						cardLinkUrl: 'https://example.com/card2',
-						cardImg: 'card2.jpg',
-						cardText: [
-							{
-								cardTextTitle: 'Text 3',
-								cardTextDescription: 'Description 3',
-							},
-							{
-								cardTextTitle: 'Text 4',
-								cardTextDescription: 'Description 4',
-							},
-						],
-						cardIntroduction: 'Introduction 2',
-						cardIntroductionTitle: 'Introduction Title 2',
-					},
-					{
-						cardTitle: 'Симптоми деменції',
-						cardLinkUrl: 'https://example.com/card2',
-						cardImg: 'card2.jpg',
-						cardText: [
-							{
-								cardTextTitle: 'Text 3',
-								cardTextDescription: 'Description 3',
-							},
-							{
-								cardTextTitle: 'Text 4',
-								cardTextDescription: 'Description 4',
-							},
-						],
-						cardIntroduction: 'Introduction 2',
-						cardIntroductionTitle: 'Introduction Title 2',
-					},
-					{
-						cardTitle: 'Що спричиняє деменцію',
-						cardLinkUrl: 'https://example.com/card2',
-						cardImg: 'card2.jpg',
-						cardText: [
-							{
-								cardTextTitle: 'Text 3',
-								cardTextDescription: 'Description 3',
-							},
-							{
-								cardTextTitle: 'Text 4',
-								cardTextDescription: 'Description 4',
-							},
-						],
-						cardIntroduction: 'Introduction 2',
-						cardIntroductionTitle: 'Introduction Title 2',
-					},
-					{
-						cardTitle: 'Поведінкові та психологічні зміни',
-						cardLinkUrl: 'https://example.com/card2',
-						cardImg: 'card2.jpg',
-						cardText: [
-							{
-								cardTextTitle: 'Text 3',
-								cardTextDescription: 'Description 3',
-							},
-							{
-								cardTextTitle: 'Text 4',
-								cardTextDescription: 'Description 4',
-							},
-						],
-						cardIntroduction: 'Introduction 2',
-						cardIntroductionTitle: 'Introduction Title 2',
-					},
-				],
-			},
-			{
-				SubMenuTitle: 'Стадії деменції',
-				SubMenuLinkUrl: 'https://example.com/submenu2',
-				SubMenuCards: [
-					{
-						cardTitle: 'Процес прогресування синдрому',
-						cardLinkUrl: 'https://example.com/card1',
-						cardImg: 'card1.jpg',
-						cardText: [
-							{
-								cardTextTitle: 'Text 1',
-								cardTextDescription: 'Description 1',
-							},
-							{
-								cardTextTitle: 'Text 2',
-								cardTextDescription: 'Description 2',
-							},
-						],
-						cardIntroduction: 'Introduction 1',
-						cardIntroductionTitle: 'Introduction Title 1',
-					},
-					{
-						cardTitle: 'Рання стадія деменції',
-						cardLinkUrl: 'https://example.com/card1',
-						cardImg: 'card1.jpg',
-						cardText: [
-							{
-								cardTextTitle: 'Text 1',
-								cardTextDescription: 'Description 1',
-							},
-							{
-								cardTextTitle: 'Text 2',
-								cardTextDescription: 'Description 2',
-							},
-						],
-						cardIntroduction: 'Introduction 1',
-						cardIntroductionTitle: 'Introduction Title 1',
-					},
-					{
-						cardTitle: 'Середня стадія',
-						cardLinkUrl: 'https://example.com/card1',
-						cardImg: 'card1.jpg',
-						cardText: [
-							{
-								cardTextTitle: 'Text 1',
-								cardTextDescription: 'Description 1',
-							},
-							{
-								cardTextTitle: 'Text 2',
-								cardTextDescription: 'Description 2',
-							},
-						],
-						cardIntroduction: 'Introduction 1',
-						cardIntroductionTitle: 'Introduction Title 1',
-					},
-					{
-						cardTitle: 'Пізня стадія',
-						cardLinkUrl: 'https://example.com/card1',
-						cardImg: 'card1.jpg',
-						cardText: [
-							{
-								cardTextTitle: 'Text 1',
-								cardTextDescription: 'Description 1',
-							},
-							{
-								cardTextTitle: 'Text 2',
-								cardTextDescription: 'Description 2',
-							},
-						],
-						cardIntroduction: 'Introduction 1',
-						cardIntroductionTitle: 'Introduction Title 1',
-					},
-				],
-			},
-		],
+		menuSubTitle: [],
 	},
 ];
 // const data2 = {
