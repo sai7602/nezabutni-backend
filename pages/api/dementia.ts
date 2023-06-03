@@ -3,7 +3,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 // import { faker } from '@faker-js/faker/locale/uk';
 // import { title } from 'process';
 
-interface DementiaMenu {
+export interface DementiaMenu {
 	menuTitle: string;
 	id: number;
 	shortContent: string;
@@ -13,14 +13,14 @@ interface DementiaMenu {
 	menuSubTitle: SubMenu[];
 }
 
-interface SubMenu {
+export interface SubMenu {
 	SubMenuId: number;
 	SubMenuTitle: string;
 	SubMenuLinkUrl: string;
 	SubMenuCards: SubMenuCard[];
 }
 
-interface SubMenuCard {
+export interface SubMenuCard {
 	cardTitle: string;
 	cardId: number;
 	cardLinkUrl: string;

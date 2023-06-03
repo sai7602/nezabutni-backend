@@ -3,7 +3,7 @@ import prisma from '@/lib/prisma';
 // import { setupSwagger } from './swagger';
 /**
  * @swagger
- * /api/alldementiamenu:
+ * /api/dementia-card-list:
  *   get:
  *     description: Returns the hello world
  *     responses:
@@ -16,16 +16,10 @@ export default async function handler(
 ) {
 	try {
 		const result = await prisma.dementiaMenu.findMany({
-			include: {
-				menuSubTitle: {
-					include: {
-						SubMenuCards: {
-							include: {
-								cardText: true,
-							},
-						},
-					},
-				},
+			select: {
+				id: true,
+				menuTitle: true,
+				shortContent: true,
 			},
 		});
 
