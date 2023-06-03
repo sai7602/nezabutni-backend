@@ -1326,7 +1326,7 @@ const clearDatabase = async () => {
 // }
 export default function Page() {
 	return (
-		<div>
+		<div className="flex flex-col gap-5 px-20 mx-auto">
 			<div>BREAKING</div>
 			<div>
 				<button
@@ -1340,11 +1340,10 @@ export default function Page() {
 			<div>
 				<button
 					onClick={(e) => {
-						data.map((record: any) => setDatabase(record));
-						// setDatabase(data[0]);
+						setDatabase(data[0]);
 						console.log('e.b.c');
 					}}>
-					Add Dementia record
+					картка 1
 				</button>
 			</div>
 			<div>
@@ -1353,7 +1352,34 @@ export default function Page() {
 						setDatabase(data[1]);
 						console.log('e.b.c');
 					}}>
-					Типи деменції
+					картка 2
+				</button>
+			</div>
+			<div>
+				<button
+					onClick={(e) => {
+						setDatabase(data[2]);
+						console.log('e.b.c');
+					}}>
+					картка 3
+				</button>
+			</div>
+			<div>
+				<button
+					onClick={(e) => {
+						setDatabase(data[3]);
+						console.log('e.b.c');
+					}}>
+					картка 4
+				</button>
+			</div>
+			<div>
+				<button
+					onClick={(e) => {
+						setDatabase(data[4]);
+						console.log('e.b.c');
+					}}>
+					картка 5
 				</button>
 			</div>
 		</div>
