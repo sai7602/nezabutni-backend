@@ -9,6 +9,7 @@ export default async function handler(
 		const { id } = request.query;
 
 		const result = await prisma.subMenuCard.findMany({
+			where: { cardId: Number(id) },
 			include: { cardText: true },
 			// where: { id: Number(id) },
 			// include: {
