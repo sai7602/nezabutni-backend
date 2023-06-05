@@ -10,7 +10,12 @@ export default async function handler(
 
 		const result = await prisma.subMenuCard.findMany({
 			where: { cardId: Number(id) },
-			include: { cardText: true },
+			include: {
+				cardText: true,
+				subMenu: {
+					include: { dementiaMenu: { select: { menuTitle: true } } },
+				},
+			},
 			// where: { id: Number(id) },
 			// include: {
 			// 	menuSubTitle: {
