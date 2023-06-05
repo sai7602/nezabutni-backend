@@ -11,38 +11,11 @@ export default async function handler(
 		const result = await prisma.subMenuCard.findMany({
 			where: { cardId: Number(id) },
 			include: {
-				cardText: true,
-				subMenu: {
-					include: { dementiaMenu: { select: { menuTitle: true } } },
+				cardText: true, 
+				subMenu: { 
+					select: { dementiaMenu: { select: { menuTitle: true } } },
 				},
 			},
-			// where: { id: Number(id) },
-			// include: {
-			// 	menuSubTitle: {
-			// 		select: {
-			// 			SubMenuTitle: true,
-			// 			SubMenuId: true,
-			// 			SubMenuCards: {
-			// 				select: {
-			// 					cardText: {
-			// 						select: {
-			// 							cardTextTitle: true,
-			// 							cardTextId: true,
-			// 						},
-			// 					},
-			// 					cardTitle: true,
-			// 					cardId: true,
-			// 				},
-			// 			},
-			// 		},
-			// 	},
-			// },
-			// select: {
-			// 	id: true,
-			// 	menuTitle: true,
-			// 	shortContent: true,
-			// 	 menuSubTitle: true,contentDark:true
-			// },
 		});
 
 		return response.status(200).json(result);

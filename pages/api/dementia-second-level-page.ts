@@ -28,21 +28,8 @@ export default async function handler(
 							},
 						},
 					},
-					// include: {
-					// 	SubMenuCards: {
-					// 		include: {
-					// 			cardText: true,
-					// 		},
-					// 	},
-					// },
 				},
 			},
-			// select: {
-			// 	id: true,
-			// 	menuTitle: true,
-			// 	shortContent: true,
-			// 	 menuSubTitle: true,contentDark:true
-			// },
 		});
 
 		return response.status(200).json(result);
