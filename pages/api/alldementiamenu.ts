@@ -5,7 +5,8 @@ import prisma from '@/lib/prisma';
  * @swagger
  * /api/alldementiamenu:
  *   get:
- *     description: Отримання всіх записів з таблиці
+ *     summary: Отримання всіх записів з таблиці
+ *     tags: [DementiaMenu]
  *     responses:
  *       200:
  *         description: A User object.

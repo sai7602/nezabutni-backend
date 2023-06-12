@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 /**
- * @swagger
+ * 
  *
  * components:
  *   hello:

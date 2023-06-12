@@ -3,9 +3,11 @@ import prisma from '@/lib/prisma';
 
 /**
  * @swagger
+ *
  * /api/dementia-menu-list:
  *   get:
- *     summary: Get the list of dementia menus.
+ *     tags: [DementiaMenu]
+ *     summary: Отримання списку меню.
  *     responses:
  *       200:
  *         description: Successful response with the list of dementia menus.
