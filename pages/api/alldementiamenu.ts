@@ -1,6 +1,27 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import prisma from '@/lib/prisma';
 
+/**
+ * @swagger
+ * /api/alldementiamenu:
+ *   get:
+ *     description: Отримання всіх записів з таблиці
+ *     responses:
+ *       200:
+ *         description: A User object.
+ *         schema:
+ *           type: array
+ *           properties:
+ *             id:
+ *               type: integer
+ *               example: 4
+ *             name:
+ *               type: string
+ *               example: Arthur Dent
+ *
+ *
+ *
+ */
 export default async function handler(
 	request: NextApiRequest,
 	response: NextApiResponse

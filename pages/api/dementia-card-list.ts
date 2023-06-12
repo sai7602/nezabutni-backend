@@ -20,4 +20,3 @@ export default async function handler(
 		return response.status(500).json({ error: 'Something went wrong' });
 	}
 }
-
