@@ -4,11 +4,17 @@ import prisma from '@/lib/prisma';
 /**
  * @swagger
  *
- * /api/prophylaxis:
+ * /api/second-page?id={id}:
  *   get:
  *     tags: [DementiaMenu]
  *     summary: Отримання даних для сторінки Що таке деменція.
- *
+ *     parameters:
+ *       - name: id
+ *         in: query
+ *         description: ID параметр
+ *         required: true
+ *         schema:
+ *           type: string
  *     responses:
  *       200:
  *         description: Successful response with the list of dementia menus.
@@ -65,10 +71,16 @@ export default async function handler(
 ) {
 	try {
 		const { id } = request.query;
-		console.log(request.query);
-		console.log(id);
+		if (!id || Array.isArray(id)) {
+			return response
+				.status(400)
+				.json({
+					error: 'Parameter "id" is required as a single value.',
+				});
+		}
+
 		const result = await prisma.dementiaMenu.findMany({
-			where: { menuTitle: 'Зменшення ризику та профілактика' },
+			where: { linkUrl: id },
 			include: {
 				menuSubTitle: {
 					select: {
