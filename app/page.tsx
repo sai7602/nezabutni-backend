@@ -1409,8 +1409,6 @@ const clearDatabase = async () => {
 // 	);
 // }
 
-const obj: any = {};
-console.log(obj.t.r);
 export default function Page() {
 	return (
 		<div className="flex flex-col gap-5 px-20 mx-auto">
