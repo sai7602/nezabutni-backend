@@ -35,6 +35,7 @@ export default async function handler(
 	try {
 		const result = await prisma.dementiaMenu.findMany({
 			select: {
+				linkUrl: true,
 				id: true,
 				menuTitle: true,
 				shortContent: true,
