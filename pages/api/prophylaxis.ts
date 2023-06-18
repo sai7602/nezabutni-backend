@@ -6,7 +6,7 @@ import prisma from '@/lib/prisma';
  *
  * /api/prophylaxis:
  *   get:
- *     tags: [DementiaMenu]
+ *     tags: [Dementia Menu test]
  *     summary: Отримання даних для сторінки Що таке деменція.
  *
  *     responses:

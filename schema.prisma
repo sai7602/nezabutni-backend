@@ -1,50 +1,53 @@
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
   previewFeatures = ["jsonProtocol"]
 }
- 
+
 datasource db {
-  provider = "postgresql"
-  url = env("POSTGRES_PRISMA_URL") // uses connection pooling
-  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
-  shadowDatabaseUrl = env("POSTGRES_URL_NON_POOLING") // used for migrations
+  provider          = "postgresql"
+  url               = env("POSTGRES_PRISMA_URL")
+  directUrl         = env("POSTGRES_URL_NON_POOLING")
+  shadowDatabaseUrl = env("POSTGRES_URL_NON_POOLING")
 }
- 
+
 model DementiaMenu {
-  id        Int      @id @default(autoincrement())
-  menuTitle String
+  id           Int       @id @default(autoincrement())
+  menuTitle    String
   shortContent String
-  linkUrl   String
+  linkUrl      String
   contentLight String
-  contentDark String
+  contentDark  String
+  order     Int      @default(0)
+  page      String   @default("")
+  cardDescription      String   @default("")
   menuSubTitle SubMenu[]
 }
 
 model SubMenu {
-  SubMenuId     Int          @id @default(autoincrement())
-  SubMenuTitle  String
+  SubMenuId      Int           @id @default(autoincrement())
+  SubMenuTitle   String
   SubMenuLinkUrl String
-  SubMenuCards  SubMenuCard[]
-  dementiaMenu  DementiaMenu @relation(fields: [dementiaMenuId], references: [id])
   dementiaMenuId Int
+  dementiaMenu   DementiaMenu  @relation(fields: [dementiaMenuId], references: [id])
+  SubMenuCards   SubMenuCard[]
 }
 
 model SubMenuCard {
-  cardId               Int          @id @default(autoincrement())
-  cardTitle            String
-  cardLinkUrl          String
-  cardImg              String
-  cardText             cardText[]
-  cardIntroduction     String
+  cardId                Int        @id @default(autoincrement())
+  cardTitle             String
+  cardLinkUrl           String
+  cardImg               String
+  cardIntroduction      String
   cardIntroductionTitle String
-  subMenu              SubMenu @relation(fields: [subMenuId], references: [SubMenuId])
-  subMenuId            Int
+  subMenuId             Int
+  subMenu               SubMenu    @relation(fields: [subMenuId], references: [SubMenuId])
+  cardText              cardText[]
 }
 
 model cardText {
-  cardTextId          Int     @id @default(autoincrement())
+  cardTextId          Int         @id @default(autoincrement())
   cardTextTitle       String
   cardTextDescription String
-  subMenuCard         SubMenuCard @relation(fields: [subMenuCardId], references: [cardId])
   subMenuCardId       Int
+  subMenuCard         SubMenuCard @relation(fields: [subMenuCardId], references: [cardId])
 }

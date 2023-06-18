@@ -6,7 +6,7 @@ import prisma from '@/lib/prisma';
  *
  * /api/second-page?id={id}:
  *   get:
- *     tags: [DementiaMenu]
+ *     tags: [Dementia Menu Ready]
  *     summary: Отримання даних для сторінки Що таке деменція.
  *     parameters:
  *       - name: id
@@ -72,11 +72,9 @@ export default async function handler(
 	try {
 		const { id } = request.query;
 		if (!id || Array.isArray(id)) {
-			return response
-				.status(400)
-				.json({
-					error: 'Parameter "id" is required as a single value.',
-				});
+			return response.status(400).json({
+				error: 'Parameter "id" is required as a single value.',
+			});
 		}
 
 		const result = await prisma.dementiaMenu.findMany({

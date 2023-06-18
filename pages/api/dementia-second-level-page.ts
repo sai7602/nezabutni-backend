@@ -6,7 +6,7 @@ import prisma from '@/lib/prisma';
  *
  * /api/dementia-second-level-page?id={id}:
  *   get:
- *     tags: [DementiaMenu]
+ *     tags: [Dementia Menu test]
  *     summary: Отримання даних для уніфікованої сторінки другого рівня.
  *     parameters:
  *       - in: path

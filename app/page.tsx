@@ -2809,7 +2809,7 @@ export default function Page() {
 	return (
 		<div className="flex flex-col gap-5 px-20 mx-auto">
 			<div>BREAKING</div>
-			<div>
+			{/* <div>
 				<button
 					onClick={(e) => {
 						clearDatabase();
@@ -2901,7 +2901,7 @@ export default function Page() {
 					}}>
 					Оновити все
 				</button>
-			</div>
+			</div> */}
 		</div>
 	);
 }

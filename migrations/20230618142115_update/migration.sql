@@ -6,6 +6,9 @@ CREATE TABLE "DementiaMenu" (
     "linkUrl" TEXT NOT NULL,
     "contentLight" TEXT NOT NULL,
     "contentDark" TEXT NOT NULL,
+    "order" INTEGER NOT NULL DEFAULT 0,
+    "page" TEXT NOT NULL DEFAULT '',
+    "cardDescription" TEXT NOT NULL DEFAULT '',
 
     CONSTRAINT "DementiaMenu_pkey" PRIMARY KEY ("id")
 );

@@ -15,14 +15,12 @@ export default async function handler(
 			contentLight,
 			contentDark,
 			menuSubTitle,
+			order,
+			page,
+			cardDescription,
 		} = request.body;
 
-		// Очищення даних з таблиць
-		// await prisma.cardText.deleteMany();
-		// await prisma.subMenuCard.deleteMany();
-		// await prisma.subMenu.deleteMany();
-		// await prisma.dementiaMenu.deleteMany();
-		// Створення нового DementiaMenu
+	
 		const newDementiaMenu = await prisma.dementiaMenu.create({
 			data: {
 				menuTitle,
@@ -30,6 +28,9 @@ export default async function handler(
 				linkUrl,
 				contentLight,
 				contentDark,
+				order,
+				page,
+				cardDescription,
 				menuSubTitle: {
 					create: menuSubTitle.map((subMenu: any) => ({
 						SubMenuTitle: subMenu.SubMenuTitle,

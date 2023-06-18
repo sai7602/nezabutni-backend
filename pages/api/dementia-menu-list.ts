@@ -6,7 +6,7 @@ import prisma from '@/lib/prisma';
  *
  * /api/dementia-menu-list:
  *   get:
- *     tags: [DementiaMenu]
+ *     tags: [Dementia Menu test]
  *     summary: Отримання списку меню.
  *     responses:
  *       200:

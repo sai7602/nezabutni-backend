@@ -6,7 +6,7 @@ import prisma from '@/lib/prisma';
  *
  * /api/dementia-card-list:
  *   get:
- *     tags: [DementiaMenu]
+ *     tags: [Dementia Menu Ready]
  *     summary: Отримання списку карток на сторінку про деменцію.
  *     responses:
  *       200:
