@@ -14,7 +14,7 @@ import prisma from '@/lib/prisma';
  *         required: true
  *         schema:
  *           type: integer
- *         description: ID of the dementia menu.
+ *         description: В даному випадку в якості ID номер третього рівня. Наприклад, 122. Значення поля cardID з запиту /api/alldementiamenu
  *     responses:
  *       200:
  *         description: Successful response with the list of dementia menus.

@@ -11,8 +11,9 @@ import prisma from '@/lib/prisma';
  *     parameters:
  *       - name: id
  *         in: query
- *         description: ID параметр
+ *         description: В даному випадку в якості ID використовую назву сторінки другого рівня. Наприклад, "what-dementia-is". Значення поля cardLinkUrl з запиту /api/alldementiamenu
  *         required: true
+ *         default: what-dementia-is
  *         schema:
  *           type: string
  *     responses:
