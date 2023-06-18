@@ -20,6 +20,10 @@ import prisma from '@/lib/prisma';
  *                 properties:
  *                   id:
  *                     type: integer
+ *                   order:
+ *                     type: integer
+ *                   linkUrl:
+ *                     type: string
  *                   menuTitle:
  *                     type: string
  *                   shortContent:
@@ -34,12 +38,15 @@ export default async function handler(
 ) {
 	try {
 		const result = await prisma.dementiaMenu.findMany({
+			where: { page: 'about-dementia' },
 			select: {
+				order: true,
 				linkUrl: true,
 				id: true,
 				menuTitle: true,
 				shortContent: true,
 			},
+			orderBy: { order: 'asc' },
 		});
 
 		return response.status(200).json(result);
